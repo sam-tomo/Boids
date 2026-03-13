@@ -59,30 +59,37 @@ VSCode 上で本シミュレーターを実行する手順を示す．
 
 ### パラメータ変更
 ・基本的なシミュレーションパラメータはparams2.jlから変更可能です。
-#figure(
-table(
-columns: (auto, auto),
-inset: 10pt,
-align: horizon,
-[項目], [変数名],
-[エージェントの総数 ($N$)], [N],
-[領域サイズ], [WIDTH, HEIGHT],
-[時間ステップ（dt)], [dt], 
-[ステップ数(T)], [T],
-[最大速度 ($v_(max)$)], [max_speed],
-[重み（分離: $w_s$）], [w_separation],
-[重み（整列: $w_a$）], [w_alignment],
-[重み（結合: $w_c$）], [w_cohesion],
-[重み（障害物回避：$w_o$）], [w_obstacle],
-[推進力 (係数$ε$)], [propulsion_strength],
-[メトリック型で作用する距離($r$)], [metric_radius],
-[分離が作用する距離($r_s$)], [separation_radius],
-[トポロジカル型で作用するエージェントの数($k$)],[k_topo],
-[クラスタ判定距離($R_("cluster")$)], [cluster_radius],
-[障害物回避距離（$R_("obs")$）], [avoidance_radius]
-),
-caption: [シミュレーションパラメータ],
-) <table-params>
+
+項目, 変数名
+エージェントの総数 N, N
+
+領域サイズ, WIDTH, HEIGHT
+
+時間ステップ（dt), dt 
+
+ステップ数(T), T
+
+最大速度 (v_(max)), max_speed
+
+重み（分離: w_s）, w_separation
+
+重み（整列: w_a）, w_alignment
+
+重み（結合: w_c）, w_cohesion
+
+重み（障害物回避：w_o）, w_obstacle
+
+推進力 (係数ε), propulsion_strength
+
+メトリック型で作用する距離(r), metric_radius
+
+分離が作用する距離(r_s), separation_radius
+
+トポロジカル型で作用するエージェントの数(k)],k_topo
+
+クラスタ判定距離 (R_("cluster")), cluster_radius
+
+障害物回避距離 (R_("obs")), avoidance_radius
 
 ### 課題・注意点
 ・出力関数の影響により、シミュレーション領域を拡大すると、各エージェントの表示も連動して
